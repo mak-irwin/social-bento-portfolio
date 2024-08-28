@@ -1,9 +1,9 @@
 :root {
-  --bg-color: #F9F9F9;
+  --bg-color: #f9f9f9;
 }
 
 [data-theme="dark"] {
-  --bg-color: #232323
+  --bg-color: #232323;
 }
 
 body {
@@ -13,6 +13,15 @@ body {
   font-family: var(--body-font);
 }
 
-h1, h2, h3, h4, h5, h6 {
+button {
+  font-family: var(--body-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--header-font);
 }

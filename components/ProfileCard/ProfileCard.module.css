@@ -1,0 +1,15 @@
+.card {
+  background-color: white;
+  border-radius: 10px;
+  border: 0.5px solid #d7d7d7;
+  padding: 5px;
+}
+
+.bg {
+  background-image: url("../../assets/loft-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+}

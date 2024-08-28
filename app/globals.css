@@ -11,6 +11,7 @@ body {
   display: flex;
   justify-content: center;
   font-family: var(--body-font);
+  color: #393939;
 }
 
 button {
@@ -24,4 +25,11 @@ h4,
 h5,
 h6 {
   font-family: var(--header-font);
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  margin: 0px;
+}
+
+p {
+  margin: 0px;
 }

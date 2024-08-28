@@ -1,8 +1,10 @@
 .card {
   background-color: white;
-  border-radius: 10px;
+  border-radius: 15px;
   border: 0.5px solid #d7d7d7;
-  padding: 5px;
+  padding: 3px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  max-width: 450px;
 }
 
 .bg {
@@ -10,6 +12,74 @@
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 200px;
-  border-radius: 5px;
+  height: 160px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.bottom {
+  padding: 35px;
+  margin-top: -110px;
+}
+
+.bottom h1 {
+  margin-top: 15px;
+  margin-bottom: 12px;
+}
+
+.bottom p {
+  color: #707070;
+  margin-bottom: 30px;
+  line-height: 25px;
+  font-size: 1rem;
+}
+
+.pfp {
+  border: 8px solid white;
+  border-radius: 100%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px, rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 80px;
+}
+
+.icons {
+  display: flex;
+  gap: 12px;
+}
+
+.icons div {
+  display: flex;
+  padding: 10px;
+  border-radius: 100%;
+  color: white;
+  cursor: pointer;
+  transition: all 0.1s ease-out;
+}
+
+.gh {
+  background-color: #b8b8b8;
+
+  &:hover {
+    background-color: #ababab;
+  }
+}
+
+.li {
+  background-color: #afc5e4;
+
+  &:hover {
+    background-color: #9ebdea;
+  }
+}
+
+.ig {
+  background-color: #e0b9b9;
+
+  &:hover {
+    background-color: #e1a6a6;
+  }
 }

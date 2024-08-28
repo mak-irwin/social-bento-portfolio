@@ -1,5 +1,9 @@
 :root {
   --bg-color: #f9f9f9;
+  --border-color: #d7d7d7;
+  --box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  --text-color: #707070;
+  --border-radius: 15px;
 }
 
 [data-theme="dark"] {
@@ -25,7 +29,6 @@ h4,
 h5,
 h6 {
   font-family: var(--header-font);
-  letter-spacing: 1.5px;
   font-weight: 600;
   margin: 0px;
 }

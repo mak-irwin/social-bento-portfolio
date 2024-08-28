@@ -5,14 +5,14 @@ import Image from "next/image";
 import { Button } from "@/components/Button/Button";
 
 // Icons.
-import { FiFileText, FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
+import { FiFileText, FiMail } from "react-icons/fi";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 // Styles.
 import styles from "./ProfileCard.module.css";
 
 // Assets.
 import pfp from "@/assets/clean-profile.png";
-import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 // ProfileCard.tsx
 export function ProfileCard() {
@@ -24,7 +24,14 @@ export function ProfileCard() {
       {/* Bottom Content */}
       <div className={styles.bottom}>
         {/* Profile Icon */}
-        <Image src={pfp} width={100} height={100} alt="photo of mckenzie" className={styles.pfp} />
+        <Image
+          src={pfp}
+          width={110}
+          height={110}
+          alt="photo of mckenzie"
+          quality={100}
+          className={styles.pfp}
+        />
 
         {/* Name */}
         <h1>Mckenzie Irwin</h1>

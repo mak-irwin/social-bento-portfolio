@@ -25,14 +25,11 @@
 .bottom h1 {
   margin-top: 15px;
   margin-bottom: 12px;
-  letter-spacing: 1px;
 }
 
 .bottom p {
   color: var(--text-color);
   margin-bottom: 30px;
-  line-height: 25px;
-  font-size: 1rem;
 }
 
 .pfp {

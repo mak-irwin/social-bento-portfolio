@@ -1,5 +1,5 @@
 // Components.
-import { CurrentRoleCard } from "@/components/CurrentRoleCard/CurrentRoleCard";
+import { CurrentRole } from "@/components/CurrentRole/CurrentRole";
 import { ProfileCard } from "@/components/ProfileCard/ProfileCard";
 
 // Styles.
@@ -15,7 +15,7 @@ export default function Home() {
       </div>
       {/* Right Side */}
       <div>
-        <CurrentRoleCard />
+        <CurrentRole />
       </div>
     </div>
   );

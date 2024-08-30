@@ -5,5 +5,11 @@
 
 .right {
   display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.top {
+  display: flex;
   gap: 20px;
 }

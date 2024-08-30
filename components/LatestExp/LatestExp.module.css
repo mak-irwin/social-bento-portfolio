@@ -1,0 +1,49 @@
+.card {
+  background-color: white;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+  padding: 3px;
+  box-shadow: var(--box-shadow);
+  padding: 25px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.header {
+  margin-bottom: 10px;
+  margin-left: 3px;
+}
+
+.role {
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+}
+
+.role p {
+  margin-left: auto;
+  margin-bottom: auto;
+}
+
+.role h4 {
+  margin-top: 5px;
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.role p {
+  color: var(--text-color);
+}
+
+.emoji {
+  width: 65px;
+  display: flex;
+}
+
+.hr {
+  height: 1px;
+  background-color: #e3e3e3;
+  border-radius: 20px;
+}

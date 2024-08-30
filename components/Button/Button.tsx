@@ -8,6 +8,7 @@ interface Props extends ComponentProps<"button"> {
   Icon?: IconType;
 }
 
+// Button.tsx
 export function Button({ variant, Icon, children, ...props }: Props) {
   return (
     <button className={`${styles.button} ${styles[variant || "primary"]}`} {...props}>

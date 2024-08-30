@@ -16,6 +16,7 @@ body {
   justify-content: center;
   font-family: var(--body-font);
   color: #393939;
+  padding-top: 100px;
 }
 
 button {
@@ -31,6 +32,14 @@ h6 {
   font-family: var(--header-font);
   font-weight: 600;
   margin: 0px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+h4 {
+  font-size: 18px;
 }
 
 p {

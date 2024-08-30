@@ -13,10 +13,10 @@ export function CurrentRole() {
     <section className={styles.currentRole}>
       <h2 className={styles.header}>Current role</h2>
       <div className={styles.card}>
-        <Image src={logo} width={40} height={40} alt="logo of TD Bank" className={styles.logo} />
+        <Image src={logo} width={42} height={42} alt="logo of TD Bank" className={styles.logo} />
         <div>
-          <h2>Lead Software Engineer</h2>
-          <h3>TD Securities</h3>
+          <h3>Lead Software Engineer</h3>
+          <h4>TD Securities</h4>
         </div>
         <p>
           Currently working on projects which enable the fulfillment and replenishment of precious

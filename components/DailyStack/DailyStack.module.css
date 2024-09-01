@@ -24,7 +24,6 @@
   justify-content: center;
   border: 1px solid var(--border-color);
   box-shadow: var(--box-shadow);
-  transition: transform 0.2s ease-out;
 }
 
 .image {
@@ -33,6 +32,6 @@
 
 .circle:hover {
   .image {
-    transform: scale(1.06);
+    transform: scale(1.05);
   }
 }

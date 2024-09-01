@@ -88,8 +88,8 @@ export function DailyStack() {
         <div className={styles.circle}>
           <Image
             src={typescript}
-            width={28}
-            height={28}
+            width={30}
+            height={30}
             alt="typescript logo"
             className={styles.image}
           />

@@ -17,6 +17,7 @@ body {
   font-family: var(--body-font);
   color: #393939;
   padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 button {
@@ -45,4 +46,5 @@ h4 {
 p {
   margin: 0px;
   line-height: 24px;
+  color: var(--text-color);
 }

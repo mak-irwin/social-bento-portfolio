@@ -1,6 +1,5 @@
 .myLocation {
-  max-width: 400px;
-  min-width: 400px;
+  flex: 1;
 }
 
 .icon {

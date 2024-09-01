@@ -3,6 +3,7 @@ import { CurrentRole } from "@/components/CurrentRole/CurrentRole";
 import { ProfileCard } from "@/components/ProfileCard/ProfileCard";
 import { MyLocation } from "@/components/MyLocation/MyLocation";
 import { LatestExp } from "@/components/LatestExp/LatestExp";
+import { SomeProjects } from "@/components/SomeProjects/SomeProjects";
 
 // Styles.
 import styles from "./page.module.css";
@@ -21,7 +22,11 @@ export default function Home() {
           <CurrentRole />
           <MyLocation />
         </div>
+        <SomeProjects />
         <LatestExp />
+        <footer style={{ textAlign: "center" }}>
+          <p>Copyright {new Date().getFullYear()} - Designed and Developed by Mckenzie Irwin</p>
+        </footer>
       </div>
     </div>
   );

@@ -17,7 +17,7 @@ import pfp from "@/assets/clean-profile.png";
 // ProfileCard.tsx
 export function ProfileCard() {
   return (
-    <div className={styles.card}>
+    <section className={styles.card}>
       {/* Top Backgound Image */}
       <div className={styles.bg} />
 
@@ -63,6 +63,6 @@ export function ProfileCard() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

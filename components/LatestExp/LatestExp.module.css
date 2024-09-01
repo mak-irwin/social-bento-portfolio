@@ -24,6 +24,8 @@
 .role p {
   margin-left: auto;
   margin-bottom: auto;
+  margin-right: 5px;
+  font-size: 14px;
 }
 
 .role h4 {

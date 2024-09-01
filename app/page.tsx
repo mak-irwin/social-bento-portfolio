@@ -4,6 +4,7 @@ import { ProfileCard } from "@/components/ProfileCard/ProfileCard";
 import { MyLocation } from "@/components/MyLocation/MyLocation";
 import { LatestExp } from "@/components/LatestExp/LatestExp";
 import { SomeProjects } from "@/components/SomeProjects/SomeProjects";
+import { DailyStack } from "@/components/DailyStack/DailyStack";
 
 // Styles.
 import styles from "./page.module.css";
@@ -22,8 +23,9 @@ export default function Home() {
           <CurrentRole />
           <MyLocation />
         </div>
-        <SomeProjects />
+        <DailyStack />
         <LatestExp />
+        <SomeProjects />
         <footer style={{ textAlign: "center" }}>
           <p>Copyright {new Date().getFullYear()} - Designed and Developed by Mckenzie Irwin</p>
         </footer>

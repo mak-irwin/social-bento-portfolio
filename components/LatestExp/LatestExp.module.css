@@ -2,7 +2,6 @@
   background-color: white;
   border-radius: var(--border-radius);
   border: 1px solid var(--border-color);
-  padding: 3px;
   box-shadow: var(--box-shadow);
   padding: 25px;
   display: flex;
@@ -31,7 +30,6 @@
 .role h4 {
   margin-top: 5px;
   color: var(--text-color);
-  font-weight: 500;
   font-size: 1rem;
 }
 

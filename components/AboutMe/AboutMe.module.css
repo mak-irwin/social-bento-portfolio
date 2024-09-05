@@ -1,0 +1,85 @@
+.card {
+  background-color: white;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--box-shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 250px;
+  flex: 1;
+  box-sizing: border-box;
+}
+
+.about {
+  padding: 20px;
+}
+
+.header {
+  margin-bottom: 12px;
+  margin-left: 3px;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+}
+
+.icon {
+  border-radius: 100%;
+  background-color: #fbdfff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: min-content;
+  height: 42px;
+  width: 42px;
+}
+
+.imageCard {
+  /* padding: 3px; */
+  position: relative;
+  overflow: hidden;
+}
+
+.pics {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+.image {
+  /* border-radius: 12px; */
+  width: 100%;
+  height: auto;
+  flex-shrink: 0;
+  flex-grow: 0;
+  transition: all 300ms ease-in-out;
+}
+
+.buttons {
+  position: absolute;
+  padding: 5px;
+  border-radius: 20px;
+  display: flex;
+  gap: 4px;
+  background-color: rgba(0, 0, 0, 0.9);
+  left: 50%;
+  translate: -50%;
+  bottom: 1rem;
+}
+
+.btn {
+  background-color: #b1b1b1;
+  border-radius: 100%;
+  border: none;
+  aspect-ratio: 1;
+  width: 5px;
+  padding: 0px;
+  cursor: pointer;
+}
+
+.active {
+  background-color: white;
+}

@@ -27,13 +27,15 @@
 
 .icon {
   border-radius: 100%;
-  background-color: #fbdfff;
+  border: 1px solid var(--border-color);
+  /* box-shadow: var(--box-shadow); */
   display: flex;
   align-items: center;
   justify-content: center;
   width: min-content;
   height: 42px;
   width: 42px;
+  box-sizing: border-box;
 }
 
 .imageCard {
@@ -60,22 +62,22 @@
 
 .buttons {
   position: absolute;
-  padding: 5px;
+  padding: 6px;
   border-radius: 20px;
   display: flex;
   gap: 4px;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.95);
   left: 50%;
   translate: -50%;
   bottom: 1rem;
 }
 
 .btn {
-  background-color: #b1b1b1;
+  background-color: #6e6e6e;
   border-radius: 100%;
   border: none;
   aspect-ratio: 1;
-  width: 5px;
+  width: 6px;
   padding: 0px;
   cursor: pointer;
 }

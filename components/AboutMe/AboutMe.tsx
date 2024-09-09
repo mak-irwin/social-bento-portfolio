@@ -6,7 +6,7 @@ import { useState } from "react";
 // Styles.
 import styles from "./AboutMe.module.css";
 
-import camera from "@/assets/camera.png";
+import wave from "@/assets/wave.png";
 import bg1 from "@/assets/bg-1.jpg";
 import bg2 from "@/assets/bg-2.jpg";
 import bg3 from "@/assets/bg-3.jpg";
@@ -19,11 +19,11 @@ export function AboutMe() {
 
   return (
     <section>
-      <h2 className={styles.header}>About me</h2>
+      <h2 className={styles.header}>Some info</h2>
       <div className={styles.row}>
         <div className={styles.card + " " + styles.about}>
           <div className={styles.icon}>
-            <Image src={camera} alt="camera emoji" height={19} width={25} />
+            <Image src={wave} alt="camera emoji" height={25} width={25} />
           </div>
           <p>
             Currently working on projects which enable the fulfillment and replenishment

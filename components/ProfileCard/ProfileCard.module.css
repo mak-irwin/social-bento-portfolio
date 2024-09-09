@@ -64,7 +64,7 @@
   background-color: #b8b8b8;
 
   &:hover {
-    background-color: #ababab;
+    background-color: #a1a1a1;
   }
 }
 
@@ -72,7 +72,7 @@
   background-color: #afc5e4;
 
   &:hover {
-    background-color: #9ebdea;
+    background-color: #91b0e0;
   }
 }
 
@@ -80,6 +80,6 @@
   background-color: #e0b9b9;
 
   &:hover {
-    background-color: #e1a6a6;
+    background-color: #de9595;
   }
 }

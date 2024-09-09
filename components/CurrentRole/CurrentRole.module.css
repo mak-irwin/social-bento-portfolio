@@ -10,7 +10,6 @@
   background-color: white;
   border-radius: var(--border-radius);
   border: 1px solid var(--border-color);
-  padding: 3px;
   box-shadow: var(--box-shadow);
   padding: 20px;
   display: flex;

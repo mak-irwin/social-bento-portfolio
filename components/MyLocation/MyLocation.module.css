@@ -4,13 +4,15 @@
 
 .icon {
   border-radius: 100%;
-  background-color: #d4e4ff;
+  border: 1px solid var(--border-color);
+  /* box-shadow: var(--box-shadow); */
   display: flex;
   align-items: center;
   justify-content: center;
   width: min-content;
   height: 42px;
   width: 42px;
+  box-sizing: border-box;
 }
 
 .card {

@@ -19,7 +19,7 @@ export function AboutMe() {
 
   return (
     <section>
-      <h2 className={styles.header}>Some info</h2>
+      <h2 className={styles.header}>About me</h2>
       <div className={styles.row}>
         <div className={styles.card + " " + styles.about}>
           <div className={styles.icon}>

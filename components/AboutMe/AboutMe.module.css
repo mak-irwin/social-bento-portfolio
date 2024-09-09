@@ -37,7 +37,7 @@
 }
 
 .imageCard {
-  /* padding: 3px; */
+  padding: 5px;
   position: relative;
   overflow: hidden;
 }
@@ -47,10 +47,10 @@
   height: 100%;
   display: flex;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 .image {
-  /* border-radius: 12px; */
   width: 100%;
   height: auto;
   flex-shrink: 0;

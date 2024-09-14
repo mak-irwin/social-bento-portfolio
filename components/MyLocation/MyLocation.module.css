@@ -26,6 +26,16 @@
   flex-direction: column;
   justify-content: space-between;
   height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.globe {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  width: 100%;
 }
 
 .header {

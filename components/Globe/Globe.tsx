@@ -21,6 +21,7 @@ export function Globe(props: JSX.IntrinsicElements["group"]) {
 
   useFrame(({ clock }) => {
     ref.current.rotation.y = clock.getElapsedTime() * 0.05;
+    // if (ref.current.position.z < 0) ref.current.position.z += 0.5;
   });
 
   // Render.

@@ -36,9 +36,30 @@
   right: 0px;
   height: 100%;
   width: 100%;
+  animation: fadein 2s ease-in;
+}
+
+.globePlaceholder {
+  position: absolute;
+  top: 34px;
+  right: 48px;
+  aspect-ratio: 1;
+  width: 173px;
+  border-radius: 100%;
+  background-color: rgb(232, 246, 255);
 }
 
 .header {
   margin-bottom: 12px;
   margin-left: 3px;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }

@@ -26,6 +26,7 @@ export function MyLocation() {
           <Image src={pin} alt="push pin emoji" height={28} width={28} />
         </div>
         <h3>Guelph, ON</h3>
+        <div className={styles.globePlaceholder} />
         <div className={styles.globe}>
           <Canvas camera={{ position: [0, 0, 17] }}>
             <Suspense fallback={null}>

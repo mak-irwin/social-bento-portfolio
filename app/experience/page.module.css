@@ -1,0 +1,50 @@
+.experience {
+  display: flex;
+  gap: 40px;
+}
+
+.right {
+  max-width: 800px;
+  width: 800px;
+}
+
+.experienceGrid {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 1rem;
+  position: relative;
+}
+
+.experienceGrid::before {
+  content: "";
+  position: absolute;
+  grid-column: 1 / 2;
+  background-color: var(--border-color);
+  width: 1px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  height: 100%;
+  z-index: -1;
+}
+
+.avatar {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--box-shadow);
+  box-sizing: border-box;
+}
+
+.card {
+  background-color: white;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--box-shadow);
+  padding: 1rem;
+}

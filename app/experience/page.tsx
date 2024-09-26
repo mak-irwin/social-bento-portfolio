@@ -4,9 +4,6 @@ import Image from "next/image";
 // Components.
 import { ProfileCard } from "@/components/ProfileCard/ProfileCard";
 
-// Icons.
-import { FiFile } from "react-icons/fi";
-
 // Assets.
 import coin from "@/assets/coin.png";
 import mage from "@/assets/mage.png";

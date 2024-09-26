@@ -1,6 +1,9 @@
 // Externals.
 import Image from "next/image";
 
+// Components.
+import { TransitionLink } from "@/components/TransitionLink/TransitionLink";
+
 // Styles.
 import styles from "./LatestExp.module.css";
 
@@ -13,7 +16,12 @@ import tools from "@/assets/tools.png";
 export function LatestExp() {
   return (
     <section className={styles.latestExp}>
-      <h2 className={styles.header}>Latest experience</h2>
+      <div className={styles.header}>
+        <h2>Latest experience</h2>
+        <TransitionLink href="/experience">
+          <span>View all</span>
+        </TransitionLink>
+      </div>
       <div className={styles.card}>
         <div className={styles.role}>
           <div className={styles.emoji}>

@@ -10,8 +10,21 @@
 }
 
 .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 12px;
   margin-left: 3px;
+  margin-right: 7px;
+}
+
+.header span {
+  color: #75a0f5;
+  transition: filter 0.2s ease-in-out;
+}
+
+.header span:hover {
+  filter: brightness(85%);
 }
 
 .role {

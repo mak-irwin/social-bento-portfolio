@@ -39,6 +39,7 @@ export function ProfileCard() {
 
     setContent(getToolTipText(count.current));
     setShowTooltip(true);
+    navigator.clipboard.writeText("irwinmck@gmail.com");
 
     ref.current = setTimeout(() => {
       setShowTooltip(false);

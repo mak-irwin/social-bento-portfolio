@@ -87,12 +87,12 @@
 .tooltip {
   font-weight: 500;
   font-size: 14px;
-  background-color: rgb(76, 165, 76);
+  background-color: #63a55b;
   padding: 8px 12px;
 }
 
 .tooltip::before {
-  background-color: rgb(76, 165, 76);
+  background-color: #63a55b;
   height: 9px;
   width: 9px;
 }

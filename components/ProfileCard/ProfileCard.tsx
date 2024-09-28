@@ -1,16 +1,11 @@
-"use client";
-
 // Externals.
-import { useRef, useState } from "react";
-import { usePathname } from "next/navigation";
 import Image from "next/image";
 
 // Components.
-import { Button } from "@/components/Button/Button";
-import { Tooltip } from "@/components/Tooltip/Tooltip";
+import { EmailMeButton } from "@/components/EmailMeButton/EmailMeButton";
+import { ResumeButton } from "@/components/ResumeButton/ResumeButton";
 
 // Icons.
-import { FiFileText, FiMail } from "react-icons/fi";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 // Styles.
@@ -21,39 +16,6 @@ import pfp from "@/assets/clean-profile.png";
 
 // ProfileCard.tsx
 export function ProfileCard() {
-  const ref = useRef<NodeJS.Timeout | null>(null);
-  const count = useRef<number>(0);
-  const path = usePathname();
-
-  const [content, setContent] = useState("Copied!");
-  const [showTooltip, setShowTooltip] = useState(false);
-
-  // Functions.
-  function getToolTipText(clicks: number) {
-    if (clicks === 1) return "Copied!";
-    if (clicks === 2) return "Double Copied!";
-    return "Suuuuuper Copied!";
-  }
-
-  function handleEmailClick() {
-    count.current += 1;
-    if (ref.current) clearTimeout(ref.current);
-
-    setContent(getToolTipText(count.current));
-    setShowTooltip(true);
-    navigator.clipboard.writeText("irwinmck@gmail.com");
-
-    ref.current = setTimeout(() => {
-      setShowTooltip(false);
-      count.current = 0;
-      ref.current = null;
-    }, 3000);
-  }
-
-  function handleResumeClick() {
-    window.open("/mckenzie-irwin-resume.pdf", "_blank");
-  }
-
   // Render.
   return (
     <section className={styles.card}>
@@ -83,19 +45,8 @@ export function ProfileCard() {
 
         {/* Action Buttons */}
         <div className={styles.buttons}>
-          <Tooltip
-            content={content}
-            show={showTooltip}
-            yOffset={2}
-            className={styles.tooltip}
-          >
-            <Button Icon={FiMail} onClick={handleEmailClick}>
-              Email Me
-            </Button>
-          </Tooltip>
-          <Button Icon={FiFileText} variant="secondary" onClick={handleResumeClick}>
-            View Resume
-          </Button>
+          <EmailMeButton />
+          <ResumeButton />
         </div>
 
         {/* Socials */}

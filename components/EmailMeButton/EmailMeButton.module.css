@@ -1,0 +1,35 @@
+.tooltip {
+  font-weight: 500;
+  font-size: 14px;
+
+  padding: 8px 12px;
+}
+
+.tooltip::before {
+  height: 9px;
+  width: 9px;
+}
+
+.one {
+  background-color: #63a55b;
+}
+
+.one::before {
+  background-color: #63a55b;
+}
+
+.two {
+  background-color: #dca13a;
+}
+
+.two::before {
+  background-color: #dca13a;
+}
+
+.three {
+  background-color: #bf5844;
+}
+
+.three::before {
+  background-color: #bf5844;
+}

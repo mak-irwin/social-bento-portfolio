@@ -18,15 +18,6 @@
   margin-right: 7px;
 }
 
-.header span {
-  color: #75a0f5;
-  transition: filter 0.2s ease-in-out;
-}
-
-.header span:hover {
-  filter: brightness(85%);
-}
-
 .role {
   display: flex;
   align-items: center;

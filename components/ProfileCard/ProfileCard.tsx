@@ -2,6 +2,7 @@
 
 // Externals.
 import { useRef, useState } from "react";
+import { usePathname } from "next/navigation";
 import Image from "next/image";
 
 // Components.
@@ -22,6 +23,8 @@ import pfp from "@/assets/clean-profile.png";
 export function ProfileCard() {
   const ref = useRef<NodeJS.Timeout | null>(null);
   const count = useRef<number>(0);
+  const sound = typeof Audio !== "undefined" ? new Audio("/click.mp3") : null;
+  const path = usePathname();
 
   const [content, setContent] = useState("Copied!");
   const [showTooltip, setShowTooltip] = useState(false);
@@ -39,6 +42,7 @@ export function ProfileCard() {
 
     setContent(getToolTipText(count.current));
     setShowTooltip(true);
+    sound?.play();
     navigator.clipboard.writeText("irwinmck@gmail.com");
 
     ref.current = setTimeout(() => {
@@ -46,6 +50,11 @@ export function ProfileCard() {
       count.current = 0;
       ref.current = null;
     }, 3000);
+  }
+
+  function handleResumeClick() {
+    sound?.play();
+    window.open("/mckenzie-irwin-resume.pdf", "_blank");
   }
 
   // Render.
@@ -87,11 +96,7 @@ export function ProfileCard() {
               Email Me
             </Button>
           </Tooltip>
-          <Button
-            Icon={FiFileText}
-            variant="secondary"
-            onClick={() => window.open("/mckenzie-irwin-resume.pdf", "_blank")}
-          >
+          <Button Icon={FiFileText} variant="secondary" onClick={handleResumeClick}>
             View Resume
           </Button>
         </div>

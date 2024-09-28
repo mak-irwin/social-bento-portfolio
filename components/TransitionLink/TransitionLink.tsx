@@ -5,6 +5,9 @@ import Link, { LinkProps } from "next/link";
 import { useRouter } from "next/navigation";
 import type { MouseEvent, ReactNode } from "react";
 
+// Styles.
+import styles from "./TransitionLink.module.css";
+
 // Props.
 interface Props extends LinkProps {
   href: string;
@@ -14,9 +17,11 @@ interface Props extends LinkProps {
 // TransitionLink.tsx
 export const TransitionLink = ({ href, children, ...props }: Props) => {
   const router = useRouter();
+  const sound = typeof Audio !== "undefined" ? new Audio("/click.mp3") : null;
 
   const handleClick = async (e: MouseEvent<HTMLAnchorElement, globalThis.MouseEvent>) => {
     e.preventDefault();
+    sound?.play();
     const body = document.querySelector("body");
     body?.classList.add("page-transition");
     await sleep(250);
@@ -27,7 +32,7 @@ export const TransitionLink = ({ href, children, ...props }: Props) => {
 
   // Render.
   return (
-    <Link href={href} onClick={handleClick} {...props}>
+    <Link href={href} onClick={handleClick} className={styles.link} {...props}>
       {children}
     </Link>
   );

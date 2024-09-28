@@ -18,9 +18,7 @@ export function LatestExp() {
     <section className={styles.latestExp}>
       <div className={styles.header}>
         <h2>Latest experience</h2>
-        <TransitionLink href="/experience">
-          <span>View all</span>
-        </TransitionLink>
+        <TransitionLink href="/experience">View all</TransitionLink>
       </div>
       <div className={styles.card}>
         <div className={styles.role}>

@@ -1,0 +1,8 @@
+.link {
+  color: #75a0f5;
+  transition: filter 0.2s ease-in-out;
+}
+
+.link:hover {
+  filter: brightness(85%);
+}

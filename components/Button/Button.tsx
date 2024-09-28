@@ -1,6 +1,7 @@
 import { ComponentProps } from "react";
 import type { IconType } from "react-icons";
 
+// Styles.
 import styles from "./Button.module.css";
 
 interface Props extends ComponentProps<"button"> {

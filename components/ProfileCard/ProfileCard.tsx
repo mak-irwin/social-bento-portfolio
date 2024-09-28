@@ -1,8 +1,12 @@
+"use client";
+
 // Externals.
+import { useRef, useState } from "react";
 import Image from "next/image";
 
 // Components.
 import { Button } from "@/components/Button/Button";
+import { Tooltip } from "@/components/Tooltip/Tooltip";
 
 // Icons.
 import { FiFileText, FiMail } from "react-icons/fi";
@@ -16,6 +20,34 @@ import pfp from "@/assets/clean-profile.png";
 
 // ProfileCard.tsx
 export function ProfileCard() {
+  const ref = useRef<NodeJS.Timeout | null>(null);
+  const count = useRef<number>(0);
+
+  const [content, setContent] = useState("Copied!");
+  const [showTooltip, setShowTooltip] = useState(false);
+
+  // Functions.
+  function getToolTipText(clicks: number) {
+    if (clicks === 1) return "Copied!";
+    if (clicks === 2) return "Double Copied!";
+    return "Suuuuuper Copied!";
+  }
+
+  function handleEmailClick() {
+    count.current += 1;
+    if (ref.current) clearTimeout(ref.current);
+
+    setContent(getToolTipText(count.current));
+    setShowTooltip(true);
+
+    ref.current = setTimeout(() => {
+      setShowTooltip(false);
+      count.current = 0;
+      ref.current = null;
+    }, 3000);
+  }
+
+  // Render.
   return (
     <section className={styles.card}>
       {/* Top Backgound Image */}
@@ -38,13 +70,22 @@ export function ProfileCard() {
 
         {/* Summary */}
         <p>
-          Software engineer with over 5 years experience developing fullstack enterprise web
-          applications.
+          Software engineer with over 5 years experience developing fullstack enterprise
+          web applications.
         </p>
 
         {/* Action Buttons */}
         <div className={styles.buttons}>
-          <Button Icon={FiMail}>Email Me</Button>
+          <Tooltip
+            content={content}
+            show={showTooltip}
+            yOffset={2}
+            className={styles.tooltip}
+          >
+            <Button Icon={FiMail} onClick={handleEmailClick}>
+              Email Me
+            </Button>
+          </Tooltip>
           <Button Icon={FiFileText} variant="secondary">
             View Resume
           </Button>

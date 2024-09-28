@@ -12,12 +12,15 @@
   box-shadow: var(--box-shadow);
   transform: translate(-50%, 0);
   position: absolute;
-  visibility: hidden;
   text-wrap: nowrap;
 
   /* Animation Properties */
-  transition: opacity 150ms ease-in-out;
+  transition-property: opacity, visibility;
+  transition-timing-function: ease-in-out;
+  transition-duration: 175ms;
+
   opacity: 0;
+  visibility: hidden;
 }
 
 .show {

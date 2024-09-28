@@ -83,3 +83,16 @@
     background-color: #de9595;
   }
 }
+
+.tooltip {
+  font-weight: 500;
+  font-size: 14px;
+  background-color: rgb(76, 165, 76);
+  padding: 8px 12px;
+}
+
+.tooltip::before {
+  background-color: rgb(76, 165, 76);
+  height: 9px;
+  width: 9px;
+}

@@ -87,7 +87,11 @@ export function ProfileCard() {
               Email Me
             </Button>
           </Tooltip>
-          <Button Icon={FiFileText} variant="secondary">
+          <Button
+            Icon={FiFileText}
+            variant="secondary"
+            onClick={() => window.open("/mckenzie-irwin-resume.pdf", "_blank")}
+          >
             View Resume
           </Button>
         </div>

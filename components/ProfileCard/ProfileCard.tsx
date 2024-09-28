@@ -23,7 +23,6 @@ import pfp from "@/assets/clean-profile.png";
 export function ProfileCard() {
   const ref = useRef<NodeJS.Timeout | null>(null);
   const count = useRef<number>(0);
-  const sound = typeof Audio !== "undefined" ? new Audio("/click.mp3") : null;
   const path = usePathname();
 
   const [content, setContent] = useState("Copied!");
@@ -42,7 +41,6 @@ export function ProfileCard() {
 
     setContent(getToolTipText(count.current));
     setShowTooltip(true);
-    sound?.play();
     navigator.clipboard.writeText("irwinmck@gmail.com");
 
     ref.current = setTimeout(() => {
@@ -53,7 +51,6 @@ export function ProfileCard() {
   }
 
   function handleResumeClick() {
-    sound?.play();
     window.open("/mckenzie-irwin-resume.pdf", "_blank");
   }
 

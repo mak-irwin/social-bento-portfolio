@@ -144,6 +144,13 @@ export default function Experience() {
             <h4>Ryerson University - Computer Science</h4>
           </div>
         </div>
+        <footer className={styles.footer}>
+          <div />
+          <p>
+            Copyright {new Date().getFullYear()} - Designed and Developed by Mckenzie
+            Irwin
+          </p>
+        </footer>
       </div>
     </div>
   );

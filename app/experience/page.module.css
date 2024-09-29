@@ -81,3 +81,14 @@
   background-color: #f6f6f6;
   border-radius: 10px;
 }
+
+.footer {
+  display: grid;
+  grid-template-columns: 55px 1fr;
+  gap: 2rem;
+  margin-top: 22px;
+
+  & p {
+    text-align: center;
+  }
+}

@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 
   return {
     title: post.data.title,
-    description: post.data.description,
+    description: post.data.desc,
   };
 }
 
@@ -39,7 +39,7 @@ const components = {
   Button: Button,
 };
 
-// Specific Blog Post.
+// Article Page.
 export default async function Post({ params }: { params: { slug: string } }) {
   const post = getArticleBySlug(params.slug);
 

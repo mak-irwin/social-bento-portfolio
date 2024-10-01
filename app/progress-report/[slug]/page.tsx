@@ -5,14 +5,14 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import { notFound } from "next/navigation";
 
 // Utils.
-import { getPostBySlug, POSTS_DIR } from "../blog.utils";
+import { getArticleBySlug, ARTICLE_DIR } from "../utils";
 
 // Components.
 import { Button } from "@/components/Button/Button";
 
 // Statically generate pages at build time based off file slugs.
 export async function generateStaticParams() {
-  const files = fs.readdirSync(POSTS_DIR);
+  const files = fs.readdirSync(ARTICLE_DIR);
   return files.map((fileName) => ({
     slug: fileName.replace(/\.mdx$/, ""),
   }));
@@ -20,7 +20,7 @@ export async function generateStaticParams() {
 
 // Generate the meta-data for the posts.
 export async function generateMetadata({ params }: { params: { slug: string } }) {
-  const post = getPostBySlug(params.slug);
+  const post = getArticleBySlug(params.slug);
 
   if (!post) {
     return {
@@ -41,7 +41,7 @@ const components = {
 
 // Specific Blog Post.
 export default async function Post({ params }: { params: { slug: string } }) {
-  const post = getPostBySlug(params.slug);
+  const post = getArticleBySlug(params.slug);
 
   if (!post) notFound();
 

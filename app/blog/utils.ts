@@ -28,7 +28,7 @@ export const getArticles = (count?: number) => {
     return {
       slug: slug,
       title: data.title,
-      desc: data.desc,
+      desc: data.description,
       catagory: data.catagory,
       date: data.date,
     };

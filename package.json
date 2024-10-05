@@ -12,6 +12,7 @@
     "@react-three/drei": "^9.112.0",
     "@react-three/fiber": "^8.17.7",
     "@types/three": "^0.169.0",
+    "dayjs": "^1.11.13",
     "gray-matter": "^4.0.3",
     "next": "^14.2.13",
     "next-mdx-remote": "^5.0.0",

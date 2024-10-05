@@ -11,7 +11,14 @@
 .skills {
   display: flex;
   justify-content: space-between;
-  /* gap: 18px; */
+}
+
+@media only screen and (max-width: 800px) {
+  .skills {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
 }
 
 .circle {

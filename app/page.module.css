@@ -3,6 +3,14 @@
   gap: 40px;
 }
 
+@media only screen and (max-width: 1300px) {
+  .home {
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 20px;
+  }
+}
+
 .right {
   display: flex;
   flex-direction: column;
@@ -13,4 +21,10 @@
 .top {
   display: flex;
   gap: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+  .top {
+    flex-direction: column;
+  }
 }

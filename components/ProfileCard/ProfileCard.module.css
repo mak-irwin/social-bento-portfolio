@@ -83,3 +83,13 @@
     background-color: #de9595;
   }
 }
+
+@media only screen and (max-width: 1300px) {
+  .card {
+    max-width: 100%;
+  }
+
+  .buttons {
+    margin-bottom: 40px;
+  }
+}

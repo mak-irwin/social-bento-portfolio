@@ -6,9 +6,9 @@
   --border-radius: 15px;
 }
 
-[data-theme="dark"] {
+/* [data-theme="dark"] {
   --bg-color: #232323;
-}
+} */
 
 body {
   background-color: var(--bg-color);
@@ -27,7 +27,6 @@ body {
 
 .page-transition {
   opacity: 0;
-  /* background-color: black; */
   transform: translateY(10px);
   filter: blur(10px);
 }

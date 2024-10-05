@@ -16,7 +16,7 @@ export const getArticleBySlug = (slug: string) => {
 };
 
 // Returns the article metadata in most recent order.
-export const getArticles = () => {
+export const getArticles = (count?: number) => {
   const files = fs.readdirSync(ARTICLE_DIR);
 
   const data = files.map((file) => {
@@ -29,11 +29,12 @@ export const getArticles = () => {
       slug: slug,
       title: data.title,
       desc: data.desc,
+      catagory: data.catagory,
       date: data.date,
     };
   });
 
-  return data.sort((a, b) => {
+  data.sort((a, b) => {
     const date1 = new Date(a.date);
     const date2 = new Date(b.date);
 
@@ -41,4 +42,7 @@ export const getArticles = () => {
     if (date1 > date2) return -1;
     return 0;
   });
+
+  if (count) return data.slice(0, count);
+  return data;
 };

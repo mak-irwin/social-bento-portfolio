@@ -6,6 +6,7 @@ import { LatestExp } from "@/components/LatestExp/LatestExp";
 import { SomeProjects } from "@/components/SomeProjects/SomeProjects";
 import { DailyStack } from "@/components/DailyStack/DailyStack";
 import { AboutMe } from "@/components/AboutMe/AboutMe";
+import { ArticlePreview } from "@/components/ArticlePreview/ArticlePreview";
 
 // Styles.
 import styles from "./page.module.css";
@@ -28,6 +29,7 @@ export default function Home() {
         <AboutMe />
         <LatestExp />
         <SomeProjects />
+        <ArticlePreview />
         <footer style={{ textAlign: "center" }}>
           <p>
             Copyright {new Date().getFullYear()} - Designed and Developed by Mckenzie

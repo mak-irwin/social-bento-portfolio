@@ -1,8 +1,8 @@
 .card {
+  position: relative;
   background-color: white;
   border-radius: var(--border-radius);
   border: 1px solid var(--border-color);
-  padding: 3px;
   box-shadow: var(--box-shadow);
   padding: 40px 25px;
   display: flex;
@@ -10,18 +10,38 @@
   gap: 30px;
 }
 
-.project {
+.placeholder {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 15px;
+  background-color: white;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
   display: flex;
-  cursor: pointer;
-  padding: 0px 10px;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
-.project:hover {
+.project {
+  display: flex;
+  user-select: none;
+  /* cursor: pointer; */
+  padding: 0px 10px;
+  filter: blur(4px);
+}
+
+/* .project:hover {
   .caret {
     color: var(--text-color);
     animation: bounce 1s infinite forwards ease-in-out;
   }
-}
+} */
 
 .header {
   margin-bottom: 12px;
@@ -57,6 +77,7 @@
   height: 1px;
   background-color: #e3e3e3;
   border-radius: 20px;
+  filter: blur(4px);
 }
 
 @keyframes bounce {

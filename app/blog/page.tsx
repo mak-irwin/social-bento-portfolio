@@ -12,7 +12,7 @@ export default function Blog() {
   return (
     <div>
       {articles.map((a) => (
-        <TransitionLink href={`/progress-report/${a.slug}`} key={a.slug}>
+        <TransitionLink href={`/blog/${a.slug}`} key={a.slug}>
           <h1>{a.title}</h1>
           <p>{a.desc}</p>
           <p>{a.date}</p>

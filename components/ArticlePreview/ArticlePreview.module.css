@@ -1,0 +1,19 @@
+.card {
+  background-color: white;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--box-shadow);
+  padding: 25px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  margin-left: 3px;
+  margin-right: 7px;
+}

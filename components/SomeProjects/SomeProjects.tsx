@@ -18,7 +18,7 @@ export function SomeProjects() {
       <div className={styles.card}>
         <div className={styles.placeholder}>
           <Image src={logo} height={20} alt="constuction emoji" />
-          <div>Under construction.</div>
+          <div>under construction</div>
           <Image src={logo} height={20} alt="constuction emoji" />
         </div>
         <div className={styles.project}>

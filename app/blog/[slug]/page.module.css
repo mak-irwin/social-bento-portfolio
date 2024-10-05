@@ -1,0 +1,30 @@
+.article {
+  max-width: 700px;
+}
+
+.article h1,
+.article h2,
+.article h3,
+.article h4,
+.article h5,
+.article h6 {
+  margin-bottom: 8px;
+  margin-top: 24px;
+}
+
+.article p {
+  margin-bottom: 10px;
+}
+
+.article code {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+}
+
+.article img {
+  width: 100%;
+  border-radius: 10px;
+}

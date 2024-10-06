@@ -5,7 +5,6 @@
 .icon {
   border-radius: 100%;
   border: 1px solid var(--border-color);
-  /* box-shadow: var(--box-shadow); */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,6 +45,12 @@
   width: 173px;
   border-radius: 100%;
   background-color: rgb(232, 246, 255);
+}
+
+@media only screen and (max-width: 800px) {
+  .globePlaceholder {
+    display: none;
+  }
 }
 
 .header {

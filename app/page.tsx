@@ -15,7 +15,7 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <div className={styles.home}>
-      {/* Left Column */}
+      {/* Left Side */}
       <div className={styles.left}>
         <ProfileCard />
       </div>

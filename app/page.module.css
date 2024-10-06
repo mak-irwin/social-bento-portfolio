@@ -1,21 +1,13 @@
 .home {
-  display: flex;
-  gap: 40px;
-}
-
-@media only screen and (max-width: 1300px) {
-  .home {
-    flex-direction: column;
-    gap: 30px;
-    padding-bottom: 20px;
-  }
+  display: grid;
+  grid-template-columns: 1fr 800px;
+  gap: 30px;
 }
 
 .right {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  max-width: 800px;
 }
 
 .top {
@@ -23,7 +15,18 @@
   gap: 20px;
 }
 
+@media only screen and (max-width: 1300px) {
+  .home {
+    grid-template-columns: 800px;
+  }
+}
+
 @media only screen and (max-width: 800px) {
+  .home {
+    grid-template-columns: 1fr;
+    padding-bottom: 20px;
+  }
+
   .top {
     flex-direction: column;
   }

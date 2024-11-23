@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, type JSX } from "react";
 
 // Three.js
 import * as THREE from "three";

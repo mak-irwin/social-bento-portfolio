@@ -24,6 +24,7 @@ export default function Experience() {
         <ProfileCard />
       </div>
       <div className={styles.right}>
+        <h2 className={styles.header}>Experience</h2>
         <div className={styles.experienceGrid}>
           <div className={styles.avatar}>
             <Image src={coin} height={35} width={35} alt="silver coin emoji" />
@@ -34,13 +35,16 @@ export default function Experience() {
               <span>2023 - Pres.</span>
             </div>
             <h4>TD Securities - App Engineering & Design</h4>
+            <span className={styles.smSpan}>2023 - Pres.</span>
             <div className={styles.article}>
-              <p>Currently leading the development of Wholesale UI development.</p>
-              <p>Coordinating the migration from current cloud offering to GCP.</p>
-              <p>
-                Lead a team of 5 developers to rebuild legacy UI for booking precious
-                metal trades.
-              </p>
+              <ul>
+                <li>Currently leading the development of Wholesale UI development.</li>
+                <li>Coordinating the migration from current cloud offering to GCP.</li>
+                <li>
+                  Lead a team of 5 developers to rebuild legacy UI for booking precious
+                  metal trades.
+                </li>
+              </ul>
             </div>
           </div>
           <div className={styles.avatar}>
@@ -52,17 +56,20 @@ export default function Experience() {
               <span>2021</span>
             </div>
             <h4>TD Securities - Precious Metal Automation</h4>
+            <span className={styles.smSpan}>2021</span>
             <div className={styles.article}>
-              <p>Architect Metro Auctions Platform</p>
-              <p>
-                Improved trader efficiency by enabling concurrent deal bookings and
-                automating aspects of the deal process like credit checking and info
-                entry.
-              </p>
-              <p>
-                Leveraged MongoDB change streaming to connect disparate systems and create
-                an event based architecture.
-              </p>
+              <ul>
+                <li>Architect Metro Auctions Platform</li>
+                <li>
+                  Improved trader efficiency by enabling concurrent deal bookings and
+                  automating aspects of the deal process like credit checking and info
+                  entry.
+                </li>
+                <li>
+                  Leveraged MongoDB change streaming to connect disparate systems and
+                  create an event based architecture.
+                </li>
+              </ul>
             </div>
           </div>
           <div className={styles.avatar}>
@@ -74,10 +81,13 @@ export default function Experience() {
               <span>2020</span>
             </div>
             <h4>TD Securities - Internal Tooling Development</h4>
+            <span className={styles.smSpan}>2020</span>
             <div className={styles.article}>
-              <p>Workspace</p>
-              <p>App Starter</p>
-              <p>Internal Components Library</p>
+              <ul>
+                <li>Workspace</li>
+                <li>App Starter</li>
+                <li>Internal Components Library</li>
+              </ul>
             </div>
           </div>
           <div className={styles.avatar}>
@@ -89,14 +99,7 @@ export default function Experience() {
               <span>2020</span>
             </div>
             <h4>TD Bank - Mainframe</h4>
-            <div className={styles.article}>
-              <p>
-                Had the opportunity to try out an analysis role and figured it
-                couldn&apos;t hurt. Quickly realized I enjoyed development more but I
-                think seeing the perspective from the other side of the business was
-                valuable.
-              </p>
-            </div>
+            <span className={styles.smSpan}>2020</span>
           </div>
           <div className={styles.avatar}>
             <Image src={bank} height={26} width={26} alt="bank emoji" />
@@ -107,13 +110,7 @@ export default function Experience() {
               <span>2019</span>
             </div>
             <h4>TD Bank - Business Banking</h4>
-            <div className={styles.article}>
-              <p>
-                This role was primarily focused on development of an Angular application
-                for data collection intended to replace a legacy process for onboarding
-                business clients.
-              </p>
-            </div>
+            <span className={styles.smSpan}>2019</span>
           </div>
           <div className={styles.avatar}>
             <Image src={euro} height={28} width={28} alt="euro bank note emoji" />
@@ -124,12 +121,7 @@ export default function Experience() {
               <span>2019</span>
             </div>
             <h4>TD Securities - FX Trading</h4>
-            <div className={styles.article}>
-              <p>
-                My first job in tech! Spent most of this time learning but was able to
-                deliver some realtime charting views utilizing React and WebSockets.
-              </p>
-            </div>
+            <span className={styles.smSpan}>2019</span>
           </div>
           <div className={styles.avatar}>
             <Image src={school} height={24} width={28} alt="school emoji" />
@@ -140,6 +132,7 @@ export default function Experience() {
               <span>2015 - 2018</span>
             </div>
             <h4>Ryerson University - B.Sc. Computer Science (Honours) </h4>
+            <span className={styles.smSpan}>2015 - 2018</span>
           </div>
         </div>
         <footer className={styles.footer}>

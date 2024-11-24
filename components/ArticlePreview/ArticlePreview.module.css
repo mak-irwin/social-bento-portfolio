@@ -25,13 +25,13 @@
 
 .article:hover {
   .caret {
-    color: var(--text-color);
+    color: var(--header-color);
     animation: bounce 1s infinite forwards ease-in-out;
   }
 }
 
 .title {
-  color: var(--text-color);
+  color: var(--header-color);
 }
 
 .desc {

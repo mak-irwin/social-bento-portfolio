@@ -2,9 +2,9 @@
   --bg-color: #f9f9f9;
   --border-color: #d7d7d7;
   --box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  --text-color: #707070;
+  --text-color: #646464;
   --border-radius: 15px;
-  --text-color: #393939;
+  --header-color: #393939;
   --sh-class: #2d5e9d;
   --sh-identifier: #354150;
   --sh-sign: #8996a3;
@@ -15,10 +15,6 @@
   --sh-property: #e25a1c;
   --sh-entity: #e25a1c;
 }
-
-/* [data-theme="dark"] {
-  --bg-color: #232323;
-} */
 
 body {
   margin: 0px;

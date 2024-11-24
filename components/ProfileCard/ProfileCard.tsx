@@ -40,7 +40,7 @@ export function ProfileCard() {
         {/* Summary */}
         <p>
           Software engineer with over 5 years experience developing fullstack enterprise
-          web applications.
+          web applications in the fintech industry.
         </p>
 
         {/* Action Buttons */}

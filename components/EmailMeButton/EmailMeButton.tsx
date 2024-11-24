@@ -24,9 +24,9 @@ export const EmailMeButton = () => {
 
   // Functions.
   function getToolTipText(clicks: number) {
-    if (clicks === 1) return "Copied!";
-    if (clicks === 2) return "Double Copied!";
-    return "Suuuuuper Copied!";
+    if (clicks === 1) return "Email copied!";
+    if (clicks === 2) return "Double copied!";
+    return "Suuuuuper copied!";
   }
 
   function getToolTipStyle(clicks: number) {

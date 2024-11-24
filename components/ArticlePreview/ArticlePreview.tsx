@@ -29,7 +29,7 @@ export function ArticlePreview() {
   return (
     <section className={styles.latestExp}>
       <div className={styles.header}>
-        <h2>Some thoughts</h2>
+        <h2>Some notes</h2>
       </div>
       <div className={styles.card}>
         {articles.map((a, i) => (

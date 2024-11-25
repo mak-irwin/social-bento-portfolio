@@ -29,13 +29,13 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 
   if (!article) {
     return {
-      title: "Article Not Found",
+      title: "Blog - Article not found.",
       description: "This article does not exist.",
     };
   }
 
   return {
-    title: article.data.title,
+    title: `Blog - ${article.data.title}`,
     description: article.data.desc,
   };
 }

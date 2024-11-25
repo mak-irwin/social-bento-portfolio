@@ -1,5 +1,6 @@
 // Externals.
 import Image from "next/image";
+import type { Metadata } from "next";
 
 // Components.
 import { ProfileCard } from "@/components/ProfileCard/ProfileCard";
@@ -15,6 +16,12 @@ import school from "@/assets/school.png";
 
 // Styles.
 import styles from "./page.module.css";
+
+// Metadata.
+export const metadata: Metadata = {
+  title: "Experience - Mckenzie Irwin",
+  description: "Mckenzie Irwin's work history and experience with additional detail.",
+};
 
 // Experience Page.
 export default function Experience() {

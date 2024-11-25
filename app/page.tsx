@@ -1,3 +1,6 @@
+// Externals.
+import type { Metadata } from "next";
+
 // Components.
 import { CurrentRole } from "@/components/CurrentRole/CurrentRole";
 import { ProfileCard } from "@/components/ProfileCard/ProfileCard";
@@ -10,6 +13,13 @@ import { ArticlePreview } from "@/components/ArticlePreview/ArticlePreview";
 
 // Styles.
 import styles from "./page.module.css";
+
+// Metadata.
+export const metadata: Metadata = {
+  title: "Intro - Mckenzie Irwin",
+  description:
+    "Mckenzie Irwin's personal portfolio showcasing experience, projects, and writings.",
+};
 
 // Home Page.
 export default function Home() {

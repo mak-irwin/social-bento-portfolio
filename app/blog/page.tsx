@@ -1,3 +1,6 @@
+// Externals.
+import { notFound } from "next/navigation";
+
 // Components.
 import { TransitionLink } from "@/components/TransitionLink/TransitionLink";
 
@@ -6,6 +9,9 @@ import { getArticles } from "./utils";
 
 // Progress Report Page.
 export default function Blog() {
+  // Returning not found for now until this page is worth building.
+  notFound();
+
   const articles = getArticles();
 
   // Render.

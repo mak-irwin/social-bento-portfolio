@@ -67,8 +67,12 @@ export function AboutMe() {
             <Image src={wave} alt="camera emoji" height={25} width={25} />
           </div>
           <p>
-            Currently working on projects which enable the fulfillment and replenishment
-            of precious metals orders across Canada.
+            Captivated by technology ever since getting RollerCoaster Tycoon from a cereal
+            box.
+          </p>
+          <p>
+            Outside of work you&apos;ll find me rock climbing, discussing stocks, and
+            spending time with friends, family, and pets!
           </p>
         </div>
         <div className={styles.card + " " + styles.imageCard}>

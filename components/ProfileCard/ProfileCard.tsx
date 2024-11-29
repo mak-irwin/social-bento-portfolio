@@ -39,8 +39,8 @@ export function ProfileCard() {
 
         {/* Summary */}
         <p>
-          Software engineer with over 5 years experience developing fullstack enterprise
-          web applications in the fintech industry.
+          Software engineer with 5+ years experience developing fullstack enterprise web
+          applications in fintech.
         </p>
 
         {/* Action Buttons */}

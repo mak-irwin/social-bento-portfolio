@@ -9,8 +9,9 @@ const raleway = Raleway({ subsets: ["latin"], variable: "--header-font" });
 
 // Meta Data.
 export const metadata: Metadata = {
-  title: "Mckenzie Irwin",
-  description: "Silly little portfolio for my development career.",
+  title: "Root - Mckenzie Irwin",
+  description:
+    "Mckenzie Irwin's personal portfolio showcasing experience, projects, and writings.",
 };
 
 // Render.
@@ -21,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${raleway.variable}`}>{children}</body>
+      <body className={`${inter.variable} ${raleway.variable} fade-in`}>{children}</body>
     </html>
   );
 }

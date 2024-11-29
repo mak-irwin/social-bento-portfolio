@@ -26,9 +26,9 @@ export const TransitionLink = ({ href, playSound = true, children, ...props }: P
     if (playSound) sound?.play();
     const body = document.querySelector("body");
     body?.classList.add("page-transition");
-    await sleep(250);
+    await sleep(400);
     router.push(href);
-    await sleep(250);
+    await sleep(400);
     body?.classList.remove("page-transition");
   };
 

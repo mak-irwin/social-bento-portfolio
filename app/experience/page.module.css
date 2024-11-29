@@ -26,7 +26,7 @@
   right: 0;
   margin: 0 auto;
   z-index: -1;
-  animation: height 3s ease-in-out forwards;
+  animation: height 4s ease-in-out forwards;
 }
 
 @keyframes height {

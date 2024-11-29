@@ -67,7 +67,6 @@
   flex-grow: 0;
   transition: all 300ms ease-in-out;
   user-select: none;
-  pointer-events: none;
 }
 
 .buttons {

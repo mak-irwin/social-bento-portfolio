@@ -9,16 +9,16 @@ import styles from "./AboutMe.module.css";
 
 // Assets.
 import wave from "@/assets/wave.png";
-import bg1 from "@/assets/bg-1.jpg";
-import bg2 from "@/assets/bg-2.jpg";
-import bg3 from "@/assets/bg-3.jpg";
+import bg1 from "@/assets/forum.jpg";
+import bg2 from "@/assets/rock.jpeg";
+import bg3 from "@/assets/ocean.jpg";
 
 const IMAGES = [bg1, bg2, bg3];
 
 // AboutMe.tsx
 export function AboutMe() {
   const ref = useRef<HTMLDivElement>(null);
-  const [imageIdx, setImageIdx] = useState(1);
+  const [imageIdx, setImageIdx] = useState(0);
   const [dragStart, setDragStart] = useState<number | null>(null);
   const [dragOffset, setDragOffset] = useState(0);
 
@@ -89,9 +89,12 @@ export function AboutMe() {
                 src={img}
                 alt="push pin emoji"
                 className={styles.image}
+                draggable={false}
                 style={{
+                  objectFit: "cover",
                   translate: `calc(${-100 * imageIdx}% + ${dragOffset}px)`,
                   transition: dragStart ? "none" : "translate 0.3s ease",
+                  cursor: dragStart ? "grabbing" : "grab",
                 }}
               />
             ))}

@@ -23,8 +23,8 @@ body {
   justify-content: center;
   font-family: var(--body-font);
   color: #393939;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 130px;
+  padding-bottom: 130px;
 
   /* Page Transition Properties */
   transition-property: opacity, background-color, transform, filter;

@@ -1,5 +1,11 @@
+.grid {
+  display: grid;
+  grid-template-columns: 800px 1fr;
+  gap: 30px;
+}
+
 .article {
-  max-width: 700px;
+  box-sizing: border-box;
 }
 
 .article h1,
@@ -13,7 +19,7 @@
 }
 
 .article p {
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 .article code {
@@ -28,4 +34,16 @@
 .article img {
   width: 100%;
   border-radius: 10px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .grid {
+    grid-template-columns: 800px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }

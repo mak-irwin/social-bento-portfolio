@@ -1,7 +1,7 @@
 import fs from "fs";
 
 // Externals.
-import Image from "next/image";
+// import Image from "next/image";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { notFound } from "next/navigation";
 import { highlight } from "sugar-high";
@@ -10,6 +10,7 @@ import { highlight } from "sugar-high";
 import { getArticleBySlug, ARTICLE_DIR } from "../utils";
 
 // Components.
+import { ProfileCard } from "@/components/ProfileCard/ProfileCard";
 import { Button } from "@/components/Button/Button";
 
 // Styles.
@@ -40,6 +41,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   };
 }
 
+// Injected components to MDXRemote renderer.
 const components = {
   Button: Button,
   code: (props: any) => (
@@ -55,8 +57,13 @@ export default async function Post({ params }: { params: { slug: string } }) {
 
   // Render.
   return (
-    <article className={styles.article}>
-      <MDXRemote source={article.content} components={{ ...components }} />
-    </article>
+    <div className={styles.grid}>
+      <article className={styles.article}>
+        <MDXRemote source={article.content} components={{ ...components }} />
+      </article>
+      <aside>
+        <ProfileCard />
+      </aside>
+    </div>
   );
 }

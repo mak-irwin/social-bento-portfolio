@@ -145,8 +145,7 @@ export default function Experience() {
         <footer className={styles.footer}>
           <div />
           <p>
-            Copyright {new Date().getFullYear()} - Designed and Developed by Mckenzie
-            Irwin
+            <p>Designed and developed by Mckenzie Irwin</p>
           </p>
         </footer>
       </div>

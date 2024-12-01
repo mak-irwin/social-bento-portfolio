@@ -41,10 +41,7 @@ export default function Home() {
         <SomeProjects />
         <ArticlePreview />
         <footer style={{ textAlign: "center" }}>
-          <p>
-            Copyright {new Date().getFullYear()} - Designed and Developed by Mckenzie
-            Irwin
-          </p>
+          <p>Designed and developed by Mckenzie Irwin</p>
         </footer>
       </div>
     </div>

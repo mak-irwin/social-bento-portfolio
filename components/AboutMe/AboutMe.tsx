@@ -66,14 +66,16 @@ export function AboutMe() {
           <div className={styles.icon}>
             <Image src={wave} alt="camera emoji" height={25} width={25} />
           </div>
-          <p>
-            Captivated by technology ever since getting RollerCoaster Tycoon from a cereal
-            box.
-          </p>
-          <p>
-            Outside of work you&apos;ll find me rock climbing, discussing stocks, and
-            spending time with friends, family, and pets!
-          </p>
+          <div>
+            <p style={{ marginBottom: "12px" }}>
+              Captivated by technology ever since getting RollerCoaster Tycoon from a
+              cereal box.
+            </p>
+            <p>
+              Outside of work you&apos;ll find me rock climbing, speculating on stocks,
+              and spending time with friends, family, and pets!
+            </p>
+          </div>
         </div>
         <div className={styles.card + " " + styles.imageCard}>
           <div

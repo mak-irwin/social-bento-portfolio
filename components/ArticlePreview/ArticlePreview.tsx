@@ -37,7 +37,6 @@ export function ArticlePreview() {
             <TransitionLink href={`/blog/${a.slug}`} className={styles.article}>
               <div>
                 <h3 className={styles.title}>{a.title}</h3>
-                {/* <p className={styles.desc}>{a.desc}</p> */}
                 <div className={styles.bottom}>
                   <div className={`${styles.chip} ${getChipStyles(a.catagory)}`}>
                     {a.catagory}

@@ -52,7 +52,7 @@
 
 .date {
   color: #707070;
-  font-size: 13px;
+  font-size: 0.8125rem;
 }
 
 .hr {
@@ -64,7 +64,7 @@
 .chip {
   padding: 6px 8px;
   border-radius: 5px;
-  font-size: 13px;
+  font-size: 0.8125rem;
 }
 
 .blue {

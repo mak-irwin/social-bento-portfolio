@@ -52,20 +52,21 @@
   gap: 12px;
 }
 
-.icons div {
+.icons a {
   display: flex;
   padding: 10px;
   border-radius: 100%;
   color: white;
   cursor: pointer;
   transition: all 0.1s ease-out;
+  text-decoration: none;
 }
 
 .gh {
   background-color: #b8b8b8;
 
   &:hover {
-    background-color: #a1a1a1;
+    background-color: #707070;
   }
 }
 
@@ -73,7 +74,7 @@
   background-color: #afc5e4;
 
   &:hover {
-    background-color: #91b0e0;
+    background-color: #7fa1d8;
   }
 }
 
@@ -81,7 +82,7 @@
   background-color: #e0b9b9;
 
   &:hover {
-    background-color: #de9595;
+    background-color: #c66f6f;
   }
 }
 

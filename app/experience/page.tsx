@@ -45,11 +45,13 @@ export default function Experience() {
             <span className={styles.smSpan}>2023 - Pres.</span>
             <div className={styles.article}>
               <ul>
-                <li>Currently leading the development of Wholesale UI development.</li>
-                <li>Coordinating the migration from current cloud offering to GCP.</li>
                 <li>
-                  Lead a team of 5 developers to rebuild legacy UI for booking precious
-                  metal trades.
+                  Leading the modernization of a legacy retail & wholesale precious metal
+                  management platform used to trade and fufill metal orders across Canada.
+                </li>
+                <li>
+                  Coordinating a CI/CD migration from legacy cloud and on-prem to a modern
+                  pure cloud based solution for our entire application suite.
                 </li>
               </ul>
             </div>
@@ -66,15 +68,18 @@ export default function Experience() {
             <span className={styles.smSpan}>2021</span>
             <div className={styles.article}>
               <ul>
-                <li>Architect Metro Auctions Platform</li>
                 <li>
-                  Improved trader efficiency by enabling concurrent deal bookings and
-                  automating aspects of the deal process like credit checking and info
-                  entry.
+                  Architected and developed a new real-time precious metal auction
+                  platform.
                 </li>
                 <li>
-                  Leveraged MongoDB change streaming to connect disparate systems and
-                  create an event based architecture.
+                  Focus on improving trader efficiency by supporting concurrent deal
+                  booking and automating parts of the process such as credit checking and
+                  info entry.
+                </li>
+                <li>
+                  Leveraged MongoDB change streaming to support an event based
+                  architecture and connect all the disparate supporting services.
                 </li>
               </ul>
             </div>
@@ -91,9 +96,19 @@ export default function Experience() {
             <span className={styles.smSpan}>2020</span>
             <div className={styles.article}>
               <ul>
-                <li>Workspace</li>
-                <li>App Starter</li>
-                <li>Internal Components Library</li>
+                <li>
+                  Developed an application portal (think app store) to catalogue all
+                  internal apps and to enable client-side interop with{" "}
+                  <a href="https://interop.io/" target="_blank" rel="noopener noreferrer">
+                    Interop.io
+                  </a>
+                  .
+                </li>
+                <li>
+                  Created a standarized application starter which integrated with all the
+                  disparate internal systems, reducing time to production for new apps
+                  from weeks to days.
+                </li>
               </ul>
             </div>
           </div>
@@ -144,9 +159,8 @@ export default function Experience() {
         </div>
         <footer className={styles.footer}>
           <div />
-          <p>
-            <p>Designed and developed by Mckenzie Irwin</p>
-          </p>
+
+          <p>Designed and developed by Mckenzie Irwin</p>
         </footer>
       </div>
     </div>

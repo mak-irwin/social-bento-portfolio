@@ -51,15 +51,30 @@ export function ProfileCard() {
 
         {/* Socials */}
         <div className={styles.icons}>
-          <div className={styles.gh}>
+          <a
+            className={styles.gh}
+            href="https://github.com/elijah-irwin"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaGithub size={22} />
-          </div>
-          <div className={styles.li}>
+          </a>
+          <a
+            className={styles.li}
+            href="https://www.linkedin.com/in/irwinmck/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaLinkedin size={22} />
-          </div>
-          <div className={styles.ig}>
+          </a>
+          <a
+            className={styles.ig}
+            href="https://www.instagram.com/mak_irwin/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaInstagram size={22} />
-          </div>
+          </a>
         </div>
       </div>
     </section>

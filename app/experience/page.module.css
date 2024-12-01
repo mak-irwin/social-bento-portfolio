@@ -75,12 +75,12 @@
 .top span {
   margin-right: 5px;
   color: var(--text-color);
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .smSpan {
   color: var(--text-color);
-  font-size: 16px;
+  font-size: 1rem;
   display: none;
   margin-top: 6px;
 }
@@ -152,11 +152,11 @@
   }
 
   .card h3 {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   .card h4 {
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .top span {

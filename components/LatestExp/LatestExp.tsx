@@ -25,22 +25,22 @@ export function LatestExp() {
       <div className={styles.card}>
         <div className={styles.role}>
           <div className={styles.emoji}>
-            <Image src={coin} height={43} width={43} alt="silver coin emoji" />
+            <Image src={mage} height={45} width={45} alt="old wizard emoji" />
           </div>
           <div>
             <h3>Lead Software Engineer</h3>
-            <h4>TD Securities - Precious Metal Automation</h4>
+            <h4>TD Securities - App Engineering & Design</h4>
           </div>
           <p>2023 - Pres.</p>
         </div>
         <div className={styles.hr} />
         <div className={styles.role}>
           <div className={styles.emoji}>
-            <Image src={mage} height={45} width={45} alt="old wizard emoji" />
+            <Image src={coin} height={43} width={43} alt="silver coin emoji" />
           </div>
           <div>
             <h3>Senior Software Engineer</h3>
-            <h4>TD Securities - App Engineering & Design</h4>
+            <h4>TD Securities - Precious Metal Automation</h4>
           </div>
           <p>2021 - 2023</p>
         </div>

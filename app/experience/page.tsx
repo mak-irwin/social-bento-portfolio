@@ -19,8 +19,8 @@ import styles from "./page.module.css";
 
 // Metadata.
 export const metadata: Metadata = {
-  title: "Experience - Mckenzie Irwin",
-  description: "Mckenzie Irwin's work history and experience with additional detail.",
+  title: "Mak Irwin - Experience",
+  description: "Mak Irwin's work history and experience with additional detail.",
 };
 
 // Experience Page.
@@ -79,7 +79,7 @@ export default function Experience() {
                 </li>
                 <li>
                   Leveraged MongoDB change streaming to support an event based
-                  architecture and connect all the disparate supporting services.
+                  architecture and connect disparate supporting services.
                 </li>
               </ul>
             </div>
@@ -105,9 +105,9 @@ export default function Experience() {
                   .
                 </li>
                 <li>
-                  Created a standarized application starter which integrated with all the
-                  disparate internal systems, reducing time to production for new apps
-                  from weeks to days.
+                  Created a standarized application starter which integrated with all
+                  internal systems, reducing time to production for new apps from weeks to
+                  days.
                 </li>
               </ul>
             </div>
@@ -145,22 +145,11 @@ export default function Experience() {
             <h4>TD Securities - FX Trading</h4>
             <span className={styles.smSpan}>2019</span>
           </div>
-          <div className={styles.avatar}>
-            <Image src={school} height={24} width={28} alt="school emoji" />
-          </div>
-          <div className={styles.card}>
-            <div className={styles.top}>
-              <h3>Undergraduate</h3>
-              <span>2015 - 2018</span>
-            </div>
-            <h4>Ryerson University - B.Sc. Computer Science (Honours) </h4>
-            <span className={styles.smSpan}>2015 - 2018</span>
-          </div>
         </div>
         <footer className={styles.footer}>
           <div />
 
-          <p>Designed and developed by Mckenzie Irwin</p>
+          <p>Designed and developed by Mak Irwin</p>
         </footer>
       </div>
     </div>

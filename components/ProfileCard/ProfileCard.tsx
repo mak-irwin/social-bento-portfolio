@@ -14,11 +14,15 @@ import styles from "./ProfileCard.module.css";
 // Assets.
 import pfp from "@/assets/clean-profile.png";
 
+interface Props {
+  fullWidth?: boolean;
+}
+
 // ProfileCard.tsx
-export function ProfileCard() {
+export function ProfileCard({ fullWidth = false }: Props) {
   // Render.
   return (
-    <section className={styles.card}>
+    <section className={`${styles.card} ${fullWidth ? styles.fullWidth : ""}`}>
       {/* Top Backgound Image */}
       <div className={styles.bg} />
 
@@ -29,13 +33,13 @@ export function ProfileCard() {
           src={pfp}
           width={110}
           height={110}
-          alt="photo of mckenzie"
+          alt="photo of mak"
           quality={100}
           className={styles.pfp}
         />
 
         {/* Name */}
-        <h1>Mckenzie Irwin</h1>
+        <h1>Mak Irwin</h1>
 
         {/* Summary */}
         <p>

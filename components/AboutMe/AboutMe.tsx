@@ -68,12 +68,12 @@ export function AboutMe() {
           </div>
           <div>
             <p style={{ marginBottom: "12px" }}>
-              Captivated by technology ever since getting RollerCoaster Tycoon from a
-              cereal box.
+              Captivated by technology ever since getting Rollercoaster Tycoon from a
+              cereal box. If you know you know.
             </p>
             <p>
-              Outside of work you&apos;ll find me rock climbing, speculating on stocks,
-              and spending time with friends, family, and pets!
+              Outside of work you&apos;ll likely find me at the rock climbing gym or a
+              cafe with good pastry.
             </p>
           </div>
         </div>

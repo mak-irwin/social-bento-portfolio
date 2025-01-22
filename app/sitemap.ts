@@ -3,7 +3,8 @@ import { MetadataRoute } from "next";
 // Utils.
 import { getArticles } from "./blog/utils";
 
-export const baseUrl = "https://portfolio-blog-starter.vercel.app";
+// Static routes.
+export const baseUrl = "https://makirwin.com";
 export const base_routes = ["", "experience"];
 
 export default function sitemap(): MetadataRoute.Sitemap {

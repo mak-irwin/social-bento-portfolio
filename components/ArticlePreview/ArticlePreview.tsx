@@ -4,6 +4,7 @@ import dayjs from "dayjs";
 
 // Components.
 import { TransitionLink } from "../TransitionLink/TransitionLink";
+import { CatagoryChip } from "../CatagoryChip/CatagoryChip";
 
 // Utils.
 import { getArticles } from "@/app/blog/utils";
@@ -18,13 +19,6 @@ import styles from "./ArticlePreview.module.css";
 export function ArticlePreview() {
   const articles = getArticles(3);
 
-  function getChipStyles(catagory: string) {
-    if (catagory === "Web Development") return styles.blue;
-    if (catagory === "Virtual Reality") return styles.purple;
-    if (catagory === "Progress Report") return styles.green;
-    return styles.default;
-  }
-
   // Render.
   return (
     <section className={styles.latestExp}>
@@ -34,13 +28,15 @@ export function ArticlePreview() {
       <div className={styles.card}>
         {articles.map((a, i) => (
           <Fragment key={a.slug}>
-            <TransitionLink href={`/blog/${a.slug}`} className={styles.article}>
+            <TransitionLink
+              href={`/blog/${a.slug}`}
+              className={styles.article}
+              playSound={false}
+            >
               <div>
                 <h3 className={styles.title}>{a.title}</h3>
                 <div className={styles.bottom}>
-                  <div className={`${styles.chip} ${getChipStyles(a.catagory)}`}>
-                    {a.catagory}
-                  </div>
+                  <CatagoryChip catagory={a.catagory} />
                   <div className={styles.date}>
                     {dayjs(a.date).format("MMM DD, YYYY")}
                   </div>

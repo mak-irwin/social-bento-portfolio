@@ -9,9 +9,9 @@ const raleway = Raleway({ subsets: ["latin"], variable: "--header-font" });
 
 // Meta Data.
 export const metadata: Metadata = {
-  title: "Root - Mckenzie Irwin",
+  title: "Mak Irwin",
   description:
-    "Mckenzie Irwin's personal portfolio showcasing experience, projects, and writings.",
+    "Mak Irwin's personal portfolio showcasing experience, projects, and writings.",
 };
 
 // Render.

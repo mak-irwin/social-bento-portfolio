@@ -1,0 +1,25 @@
+.chip {
+  padding: 6px 8px;
+  border-radius: 5px;
+  font-size: 0.8125rem;
+}
+
+.blue {
+  background-color: #dff2ff;
+  color: #5a98c1;
+}
+
+.purple {
+  color: #8761c6;
+  background-color: #ebdfff;
+}
+
+.green {
+  background-color: #eaffdf;
+  color: #69a051;
+}
+
+.default {
+  background-color: #f5f5f5;
+  color: #989898;
+}

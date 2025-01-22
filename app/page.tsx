@@ -16,9 +16,9 @@ import styles from "./page.module.css";
 
 // Metadata.
 export const metadata: Metadata = {
-  title: "Intro - Mckenzie Irwin",
+  title: "Mak Irwin - Home",
   description:
-    "Mckenzie Irwin's personal portfolio showcasing experience, projects, and writings.",
+    "Mak Irwin's personal portfolio showcasing experience, projects, and writings.",
 };
 
 // Home Page.
@@ -41,7 +41,7 @@ export default function Home() {
         <SomeProjects />
         <ArticlePreview />
         <footer style={{ textAlign: "center" }}>
-          <p>Designed and developed by Mckenzie Irwin</p>
+          <p>Designed and developed by Mak Irwin</p>
         </footer>
       </div>
     </div>

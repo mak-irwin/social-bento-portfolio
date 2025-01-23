@@ -107,9 +107,6 @@ export default async function Post({ params }: { params: { slug: string } }) {
           }),
         }}
       />
-      {/* <aside>
-        <ProfileCard />
-      </aside> */}
       <h1 className={styles.title}>{article.data.title}</h1>
       <div className={styles.author}>
         <Image

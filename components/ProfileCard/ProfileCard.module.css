@@ -11,6 +11,8 @@
 
 .fullWidth {
   max-width: 100% !important;
+  position: static;
+  top: 0px;
 }
 
 .bg {

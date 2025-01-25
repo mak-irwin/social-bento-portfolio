@@ -40,7 +40,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 
   if (!article) {
     return {
-      title: "Mak Irwin - Article not found.",
+      title: "Not Found | Mak Irwin",
       description: "This article does not exist.",
     };
   }
@@ -48,12 +48,12 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   const { title, description, date, image } = article.data;
 
   return {
-    title: `Mak Irwin - ${title}`,
+    title: `${title} | Mak Irwin`,
     description: description,
     openGraph: {
-      title: `Mak Irwin - ${title}`,
+      title: `${title} | Mak Irwin`,
       description: description,
-      url: `${baseUrl}/blog/${params.slug}`,
+      url: `${baseUrl}/notes/${params.slug}`,
       type: "article",
       publishedTime: new Date(date).toISOString(),
       locale: "en_US",
@@ -66,7 +66,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     },
     twitter: {
       card: "summary_large_image",
-      title: `Mak Irwin - ${title}`,
+      title: `${title} | Mak Irwin`,
       description: description,
       images: [`${baseUrl}/${image}`],
     },

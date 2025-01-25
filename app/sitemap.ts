@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 // Utils.
-import { getArticles } from "./blog/utils";
+import { getArticles } from "./notes/utils";
 
 // Static routes.
 export const baseUrl = "https://makirwin.com";
@@ -14,7 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   const articles: MetadataRoute.Sitemap = getArticles().map((article) => ({
-    url: `${baseUrl}/blog/${article.slug}`,
+    url: `${baseUrl}/notes/${article.slug}`,
     lastModified: new Date(),
   }));
 

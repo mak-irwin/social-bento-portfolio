@@ -7,8 +7,8 @@ import { TransitionLink } from "@/components/TransitionLink/TransitionLink";
 // Utils.
 import { getArticles } from "./utils";
 
-// Progress Report Page.
-export default function Blog() {
+// Notes Page.
+export default function Notes() {
   // Returning not found for now until this page is worth building.
   notFound();
 

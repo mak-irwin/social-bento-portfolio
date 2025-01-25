@@ -22,23 +22,23 @@ import { Footer } from "@/components/Footer/Footer";
 
 // Metadata.
 export const metadata: Metadata = {
-  title: "Mak Irwin - Experience",
+  title: "Experience | Mak Irwin",
   description: "Work history and experience with additional detail.",
   openGraph: {
-    title: "Mak Irwin - Experience",
+    title: "Experience | Mak Irwin",
     description: "Work history and experience with additional detail.",
     url: `${baseUrl}/experience`,
     locale: "en_US",
     images: [
       {
         url: `${baseUrl}/images/exp-og.png`,
-        alt: "Mak Irwin - Experience",
+        alt: "Experience | Mak Irwin",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mak Irwin - Experience",
+    title: "Experience | Mak Irwin",
     description: "Work history and experience with additional detail.",
     images: [`${baseUrl}/images/exp-og.png`],
   },
@@ -124,7 +124,7 @@ export default function Experience() {
                     href="https://interop.io/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    style={{ color: "#75a0f5;" }}
+                    style={{ color: "#75a0f5" }}
                   >
                     interop.io
                   </a>

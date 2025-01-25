@@ -7,7 +7,7 @@ import { TransitionLink } from "../TransitionLink/TransitionLink";
 import { CatagoryChip } from "../CatagoryChip/CatagoryChip";
 
 // Utils.
-import { getArticles } from "@/app/blog/utils";
+import { getArticles } from "@/app/notes/utils";
 
 // Icons.
 import { FiChevronRight } from "react-icons/fi";
@@ -29,7 +29,7 @@ export function ArticlePreview() {
         {articles.map((a, i) => (
           <Fragment key={a.slug}>
             <TransitionLink
-              href={`/blog/${a.slug}`}
+              href={`/notes/${a.slug}`}
               className={styles.article}
               playSound={false}
             >

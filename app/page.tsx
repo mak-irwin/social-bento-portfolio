@@ -20,23 +20,23 @@ import styles from "./page.module.css";
 
 // Metadata.
 export const metadata: Metadata = {
-  title: "Mak Irwin - Home",
+  title: "Mak Irwin",
   description: "Personal portfolio highlighting experience, projects, and some notes.",
   openGraph: {
-    title: `Mak Irwin - Home`,
+    title: `Mak Irwin`,
     description: "Personal portfolio highlighting experience, projects, and some notes.",
     url: baseUrl,
     locale: "en_US",
     images: [
       {
         url: `${baseUrl}/images/home-og.png`,
-        alt: "Mak Irwin - Home",
+        alt: "Mak Irwin",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: `Mak Irwin - Home`,
+    title: `Mak Irwin`,
     description: "Personal portfolio highlighting experience, projects, and some notes.",
     images: [`${baseUrl}/images/home-og.png`],
   },

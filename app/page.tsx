@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: `${baseUrl}/home-og.png`,
+        url: `${baseUrl}/images/home-og.png`,
         alt: "Mak Irwin - Home",
       },
     ],
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `Mak Irwin - Home`,
     description: "Personal portfolio highlighting experience, projects, and some notes.",
-    images: [`${baseUrl}/home-og.png`],
+    images: [`${baseUrl}/images/home-og.png`],
   },
 };
 

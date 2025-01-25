@@ -29,7 +29,11 @@ export function LatestExp() {
           </div>
           <div>
             <h3>Lead Software Engineer</h3>
-            <h4>TD Securities - App Engineering & Design</h4>
+            <h4 className={styles.details}>
+              <span>TD Securities</span>
+              <span> - </span>
+              <span>App Engineering & Design</span>
+            </h4>
           </div>
           <p>2023 - Pres.</p>
         </div>
@@ -40,7 +44,11 @@ export function LatestExp() {
           </div>
           <div>
             <h3>Senior Software Engineer</h3>
-            <h4>TD Securities - Precious Metal Automation</h4>
+            <h4 className={styles.details}>
+              <span>TD Securities</span>
+              <span> - </span>
+              <span>Precious Metal Automation</span>
+            </h4>
           </div>
           <p>2021 - 2023</p>
         </div>
@@ -51,7 +59,11 @@ export function LatestExp() {
           </div>
           <div>
             <h3>Software Engineer</h3>
-            <h4>TD Securities - Internal Tooling Development</h4>
+            <h4 className={styles.details}>
+              <span>TD Securities</span>
+              <span> - </span>
+              <span>Internal Tooling Development</span>
+            </h4>
           </div>
           <p>2020 - 2021</p>
         </div>

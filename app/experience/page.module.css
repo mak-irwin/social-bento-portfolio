@@ -12,7 +12,7 @@
 .experienceGrid {
   display: grid;
   grid-template-columns: 56px 1fr;
-  gap: 2rem;
+  gap: 30px;
   position: relative;
 }
 
@@ -80,9 +80,9 @@
 
 .smSpan {
   color: var(--text-color);
-  font-size: 1rem;
   display: none;
   margin-top: 6px;
+  font-size: 0.875rem;
 }
 
 .article {
@@ -115,8 +115,7 @@
 .footer {
   display: grid;
   grid-template-columns: 55px 1fr;
-  gap: 2rem;
-  margin-top: 22px;
+  margin-top: 30px;
 
   & p {
     text-align: center;
@@ -126,13 +125,14 @@
 @media only screen and (max-width: 1300px) {
   .experience {
     grid-template-columns: 800px;
+    gap: 30px;
   }
 }
 
 @media only screen and (max-width: 800px) {
   .experience {
     grid-template-columns: 1fr;
-    padding-bottom: 20px;
+    padding-bottom: 12px;
   }
 }
 
@@ -148,7 +148,7 @@
 
   .footer {
     grid-template-columns: 1fr;
-    margin-top: 0px;
+    margin-top: 22px;
   }
 
   .card h3 {

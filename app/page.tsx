@@ -10,6 +10,10 @@ import { SomeProjects } from "@/components/SomeProjects/SomeProjects";
 import { DailyStack } from "@/components/DailyStack/DailyStack";
 import { AboutMe } from "@/components/AboutMe/AboutMe";
 import { ArticlePreview } from "@/components/ArticlePreview/ArticlePreview";
+import { Footer } from "@/components/Footer/Footer";
+
+// Utils.
+import { baseUrl } from "./sitemap";
 
 // Styles.
 import styles from "./page.module.css";
@@ -17,8 +21,25 @@ import styles from "./page.module.css";
 // Metadata.
 export const metadata: Metadata = {
   title: "Mak Irwin - Home",
-  description:
-    "Mak Irwin's personal portfolio showcasing experience, projects, and writings.",
+  description: "Personal portfolio highlighting experience, projects, and some notes.",
+  openGraph: {
+    title: `Mak Irwin - Home`,
+    description: "Personal portfolio highlighting experience, projects, and some notes.",
+    url: baseUrl,
+    locale: "en_US",
+    images: [
+      {
+        url: `${baseUrl}/home-og.png`,
+        alt: "Mak Irwin - Home",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Mak Irwin - Home`,
+    description: "Personal portfolio highlighting experience, projects, and some notes.",
+    images: [`${baseUrl}/home-og.png`],
+  },
 };
 
 // Home Page.
@@ -40,9 +61,7 @@ export default function Home() {
         <LatestExp />
         <SomeProjects />
         <ArticlePreview />
-        <footer style={{ textAlign: "center" }}>
-          <p>Designed and developed by Mak Irwin</p>
-        </footer>
+        <Footer />
       </div>
     </div>
   );

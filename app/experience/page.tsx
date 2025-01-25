@@ -12,15 +12,36 @@ import tools from "@/assets/tools.png";
 import clipboard from "@/assets/clipboard.png";
 import bank from "@/assets/bank.png";
 import euro from "@/assets/euro.png";
-import school from "@/assets/school.png";
+
+// Utils.
+import { baseUrl } from "../sitemap";
 
 // Styles.
 import styles from "./page.module.css";
+import { Footer } from "@/components/Footer/Footer";
 
 // Metadata.
 export const metadata: Metadata = {
   title: "Mak Irwin - Experience",
-  description: "Mak Irwin's work history and experience with additional detail.",
+  description: "Work history and experience with additional detail.",
+  openGraph: {
+    title: "Mak Irwin - Experience",
+    description: "Work history and experience with additional detail.",
+    url: `${baseUrl}/experience`,
+    locale: "en_US",
+    images: [
+      {
+        url: `${baseUrl}/exp-og.png`,
+        alt: "Mak Irwin - Experience",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mak Irwin - Experience",
+    description: "Work history and experience with additional detail.",
+    images: [`${baseUrl}/exp-og.png`],
+  },
 };
 
 // Experience Page.
@@ -99,8 +120,13 @@ export default function Experience() {
                 <li>
                   Developed an application portal (think app store) to catalogue all
                   internal apps and to enable client-side interop with{" "}
-                  <a href="https://interop.io/" target="_blank" rel="noopener noreferrer">
-                    Interop.io
+                  <a
+                    href="https://interop.io/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ color: "#75a0f5;" }}
+                  >
+                    interop.io
                   </a>
                   .
                 </li>
@@ -146,11 +172,10 @@ export default function Experience() {
             <span className={styles.smSpan}>2019</span>
           </div>
         </div>
-        <footer className={styles.footer}>
+        <div className={styles.footer}>
           <div />
-
-          <p>Designed and developed by Mak Irwin</p>
-        </footer>
+          <Footer />
+        </div>
       </div>
     </div>
   );

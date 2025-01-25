@@ -36,6 +36,17 @@ export function DailyStack() {
             />
           </div>
         </Tooltip>
+        <Tooltip content="TypeScript">
+          <div className={styles.circle}>
+            <Image
+              src={typescript}
+              width={30}
+              height={30}
+              alt="typescript logo"
+              className={styles.image}
+            />
+          </div>
+        </Tooltip>
         <Tooltip content="React Query">
           <div className={styles.circle}>
             <Image
@@ -58,7 +69,7 @@ export function DailyStack() {
             />
           </div>
         </Tooltip>
-        <Tooltip content="Interop.io">
+        <Tooltip content="interop.io">
           <div className={styles.circle}>
             <Image
               src={interop}
@@ -98,17 +109,6 @@ export function DailyStack() {
               width={34}
               height={34}
               alt="express js logo"
-              className={styles.image}
-            />
-          </div>
-        </Tooltip>
-        <Tooltip content="TypeScript">
-          <div className={styles.circle}>
-            <Image
-              src={typescript}
-              width={30}
-              height={30}
-              alt="typescript logo"
               className={styles.image}
             />
           </div>

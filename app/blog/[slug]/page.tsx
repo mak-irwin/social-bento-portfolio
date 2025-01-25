@@ -11,17 +11,20 @@ import { highlight } from "sugar-high";
 import { getArticleBySlug, ARTICLE_DIR } from "../utils";
 import { baseUrl } from "@/app/sitemap";
 
+// Components.
+import { Button } from "@/components/Button/Button";
+import { Footer } from "@/components/Footer/Footer";
+import { ProfileCard } from "@/components/ProfileCard/ProfileCard";
+import { CatagoryChip } from "@/components/CatagoryChip/CatagoryChip";
+
+// Icons.
+import { PiHandsClappingLight } from "react-icons/pi";
+
 // Assets.
 import pfp from "@/assets/clean-profile.png";
 
-// Components.
-import { ProfileCard } from "@/components/ProfileCard/ProfileCard";
-import { Button } from "@/components/Button/Button";
-
 // Styles.
 import styles from "./page.module.css";
-import { CatagoryChip } from "@/components/CatagoryChip/CatagoryChip";
-import { PiHandsClapping, PiHandsClappingLight } from "react-icons/pi";
 
 // Statically generate pages at build time based off file slugs.
 export async function generateStaticParams() {
@@ -42,7 +45,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     };
   }
 
-  const { title, description, date, image, imageAlt } = article.data;
+  const { title, description, date, image } = article.data;
 
   return {
     title: `Mak Irwin - ${title}`,
@@ -136,9 +139,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
         <MDXRemote source={article.content} components={{ ...components }} />
       </article>
       <ProfileCard fullWidth />
-      <footer style={{ textAlign: "center" }}>
-        <p>Designed and developed by Mak Irwin</p>
-      </footer>
+      <Footer style={{ marginTop: "4px", textAlign: "center", marginBottom: "12px" }} />
     </section>
   );
 }

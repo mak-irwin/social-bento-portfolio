@@ -36,11 +36,21 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 12px;
+    gap: 16px;
   }
 
   .role p {
     margin-left: 0px;
+  }
+
+  .details {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .details > :nth-child(2) {
+    display: none;
   }
 }
 

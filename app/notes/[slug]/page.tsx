@@ -138,6 +138,7 @@ export default async function Post({ params }: { params: { slug: string } }) {
       <article className={styles.article}>
         <MDXRemote source={article.content} components={{ ...components }} />
       </article>
+      <div className={styles.hr} />
       <ProfileCard fullWidth />
       <Footer style={{ marginTop: "4px", textAlign: "center", marginBottom: "12px" }} />
     </section>

@@ -57,7 +57,7 @@ export function ProfileCard({ fullWidth = false }: Props) {
         <div className={styles.icons}>
           <a
             className={styles.gh}
-            href="https://github.com/elijah-irwin"
+            href="https://github.com/mak-irwin"
             target="_blank"
             rel="noopener noreferrer"
           >
